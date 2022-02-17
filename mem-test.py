@@ -25,7 +25,10 @@ gc.collect()
 mem3 = proc.memory_info().rss
 
 pd = lambda x2, x1: 100.0 * (x2 - x1) / mem0
-print( "Allocation: %0.2f%%" % pd(mem1, mem0) )
-print( "Unreference: %0.2f%%" % pd(mem2, mem1) )
-print( "Collect: %0.2f%%" % pd(mem3, mem2) )
-print( "Overall: %0.2f%%" % pd(mem3, mem0) )
+mb = lambda x1: x1 / (1024*1024)
+print( "Initial size: %0.2f MB" % mb(mem0) )
+print( "Allocation: %0.2f %%" % pd(mem1, mem0) )
+print( "Unreference: %0.2f %%" % pd(mem2, mem1) )
+print( "Collect: %0.2f %%" % pd(mem3, mem2) )
+print( "Overall: %0.2f %%" % pd(mem3, mem0) )
+
