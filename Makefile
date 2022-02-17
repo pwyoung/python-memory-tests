@@ -13,7 +13,7 @@ all: python2-test python3-test
 
 deps:
 	$(info Run setup)
-	./setup-setups.bash
+	./setup.bash
 
 python2-test:
 	$(info ### Test with Python2)
