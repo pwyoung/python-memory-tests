@@ -1,12 +1,14 @@
 ### Test with Python2
 python2 ./mem-test.py
-Allocation: 2673.56%
-Unreference: -655.44%
-Collect: 0.00%
-Overall: 2018.12%
+Initial size: 11.00MB
+Allocation: 2688.66%, 311.00MB
+Unreference: -659.20%, -77.00MB
+Collect: 0.00%, 0.00MB
+Overall: 2029.46%, 234.00MB
 ### Test with Python3
 python3 ./mem-test.py
-Allocation: 672.49%
-Unreference: -669.51%
-Collect: 0.00%
-Overall: 2.99%
+Initial size: 11.39MB
+Allocation: 671.88%, 76.53MB
+Unreference: -669.68%, -76.28MB
+Collect: 0.00%, 0.00MB
+Overall: 2.19%, 0.25MB
